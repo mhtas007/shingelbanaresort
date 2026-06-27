@@ -677,7 +677,7 @@ export default function App() {
 
   const handleSaveItemSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const isSub = inputItemSubCategory !== 'none' ? inputItemSubCategory : undefined;
+    const isSub = inputItemSubCategory !== 'none' ? inputItemSubCategory : null;
 
     if (editingItem) {
       // Edit

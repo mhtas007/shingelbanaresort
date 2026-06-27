@@ -13,7 +13,7 @@ export interface MultilingualText {
 export interface MenuItem {
   id: number;
   category: string;
-  subCategory?: SubCategoryKey;
+  subCategory?: SubCategoryKey | null;
   price: string;
   image: string;
   name: MultilingualText;
