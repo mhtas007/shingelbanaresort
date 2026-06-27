@@ -1,0 +1,292 @@
+import { Database } from './types';
+
+export const db: Database = {
+  translations: {
+    en: {
+      title: "Our Menu",
+      viewMenu: "View Menu",
+      reserve: "Reserve",
+      contact: "Contact",
+      feedback: "Feedback",
+      close: "Close",
+      formReserveTitle: "Table Reservation",
+      formReserveSubtitle: "Professional table booking service",
+      formFeedbackTitle: "Share Experience",
+      formFeedbackSubtitle: "Your rating helps us improve",
+      name: "Full Name",
+      phone: "Phone Number",
+      date: "Visit Date",
+      time: "Visit Time",
+      guests: "Guests",
+      occasion: "Occasion",
+      area: "Seating Area",
+      indoor: "Indoor",
+      outdoor: "Outdoor",
+      qFood: "Food Quality",
+      qService: "Staff Service",
+      qClean: "Cleanliness",
+      qValue: "Value for Money",
+      specialRequests: "Special Requests",
+      comments: "Detailed Feedback",
+      submit: "Confirm Booking",
+      submitFeedback: "Submit Feedback",
+      successMsg: "Success!",
+      successSub: "Thank you for reaching out.",
+      categories: {
+        grilledMeats: "Grilled Meats",
+        easternMeals: "Eastern Meals",
+        westernMeals: "Western Meals",
+        pizza: "Pizza",
+        salads: "Salads & Appetizers",
+        hotDrinks: "Hot Drinks",
+        coldDrinks: "Cold Drinks",
+        sweetsFruits: "Sweets & Fruits",
+        hookah: "Hookah"
+      },
+      subCategories: {
+        juice: "Juices",
+        energy: "Energy Drinks",
+        soft: "Soft Drinks",
+        other: "Water & Others"
+      },
+      currency: "IQD"
+    },
+    ar: {
+      title: "قائمة الطعام",
+      viewMenu: "عرض القائمة",
+      reserve: "حجز",
+      contact: "اتصال",
+      feedback: "آراء",
+      close: "إغلاق",
+      formReserveTitle: "حجز طاولة",
+      formReserveSubtitle: "خدمة حجز الطاولات الاحترافية",
+      formFeedbackTitle: "شاركنا تجربتك",
+      formFeedbackSubtitle: "تقييمك يساعدنا على التحسن",
+      name: "الاسم الكامل",
+      phone: "رقم الهاتف",
+      date: "التاريخ",
+      time: "الوقت",
+      guests: "الأشخاص",
+      occasion: "المناسبة",
+      area: "مكان الجلوس",
+      indoor: "بالداخل",
+      outdoor: "بالخارج",
+      qFood: "جودة الطعام",
+      qService: "الخدمة",
+      qClean: "النظافة",
+      qValue: "القيمة مقابل السعر",
+      specialRequests: "طلبات خاصة",
+      comments: "تفاصيل الرأي",
+      submit: "تأكيد الحجز",
+      submitFeedback: "إرسال التقييم",
+      successMsg: "تم بنجاح!",
+      successSub: "شكراً لتواصلكم معنا.",
+      categories: {
+        grilledMeats: "مشويات",
+        easternMeals: "وجبات شرقية",
+        westernMeals: "وجبات غربية",
+        pizza: "بيتزا",
+        salads: "سلطات ومقبلات",
+        hotDrinks: "مشروبات ساخنة",
+        coldDrinks: "مشروبات باردة",
+        sweetsFruits: "حلويات وفواكه",
+        hookah: "أرجيلة"
+      },
+      subCategories: {
+        juice: "عصائر",
+        energy: "مشروبات طاقة",
+        soft: "مشروبات غازية",
+        other: "مياه وأخرى"
+      },
+      currency: "د.ع"
+    },
+    ku: {
+      title: "مینیوی ئێمە",
+      viewMenu: "بینینی مینیو",
+      reserve: "حجزکردن",
+      contact: "پەیوەندی",
+      feedback: "سەرنج",
+      close: "داخستن",
+      formReserveTitle: "حجزکردنی مێز",
+      formReserveSubtitle: "خزمەتگوزاری حجزی مێزی تایبەت",
+      formFeedbackTitle: "سەرنج و پێشنیار",
+      formFeedbackSubtitle: "ڕای تۆ یارمەتیدەرمانە بۆ باشتربوون",
+      name: "ناوی تەواو",
+      phone: "ژمارەی مۆبایل",
+      date: "بەروار",
+      time: "کات",
+      guests: "میوانەکان",
+      occasion: "بۆنە",
+      area: "شوێنی دانیشتن",
+      indoor: "ناوەوە",
+      outdoor: "دەرەوە",
+      qFood: "کوالێتی خواردن",
+      qService: "خزمەتگوزاری",
+      qClean: "پاکوخاوێنی",
+      qValue: "نرخ بەرامبەر کوالێتی",
+      specialRequests: "داواکاری زیادە",
+      comments: "سەرنجی ورد",
+      submit: "ناردنی حجز",
+      submitFeedback: "ناردنی سەرنج",
+      successMsg: "سەرکەوتوو بوو!",
+      successSub: "سوپاس بۆ ناردنی سەرنجەکانت.",
+      categories: {
+        grilledMeats: "گۆشتە برژاوەکان",
+        easternMeals: "ژەمی ڕۆژهەڵاتی",
+        westernMeals: "ژەمی ڕۆژئاوا",
+        pizza: "پیتزا",
+        salads: "مقەبیلات و زەڵاتە",
+        hotDrinks: "خواردنەوە گەرمەکان",
+        coldDrinks: "خواردنەوە ساردەکان",
+        sweetsFruits: "شیرینی و میوە",
+        hookah: "نێرگلە"
+      },
+      subCategories: {
+        juice: "شەربەت",
+        energy: "خواردنەوە وزەبەخشەکان",
+        soft: "خواردنەوە گازییەکان",
+        other: "ئاو و ئەوانی تر"
+      },
+      currency: "د.ع"
+    }
+  },
+  categoryImages: {
+    grilledMeats: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=100&h=100&fit=crop",
+    easternMeals: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=100&h=100&fit=crop",
+    westernMeals: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=100&h=100&fit=crop",
+    pizza: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=100&h=100&fit=crop",
+    salads: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100&h=100&fit=crop",
+    hotDrinks: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=100&h=100&fit=crop",
+    coldDrinks: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=100&h=100&fit=crop",
+    sweetsFruits: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=100&h=100&fit=crop",
+    hookah: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg"
+  },
+  menu: [
+    // GRILLED MEATS
+    { id: 101, category: "grilledMeats", price: "10,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/pistachio%20kabab.webp", name: { en: "Pistachio Kebab (1 Skewer)", ar: "كباب فستق (سيخ 1)", ku: "کەباب فستق ١ شیش" }, desc: { en: "Delicious kebab mixed with pistachio.", ar: "كباب شهي ممزوج بالفستق.", ku: "کەبابی بەتام تێکەڵ بە فستق." } },
+    { id: 102, category: "grilledMeats", price: "20,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/pistachio%20kabab.webp", name: { en: "Pistachio Kebab (2 Skewers)", ar: "كباب فستق (سيخين)", ku: "کەباب فستق ٢ شیش" }, desc: { en: "Delicious kebab mixed with pistachio.", ar: "كباب شهي ممزوج بالفستق.", ku: "کەبابی بەتام تێکەڵ بە فستق." } },
+    { id: 109, category: "grilledMeats", price: "9,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/grilled%20liver.webp", name: { en: "Liver (1 Skewer)", ar: "معلاق (سيخ 1)", ku: "جەرگ ١ شیش" }, desc: { en: "Fresh grilled liver.", ar: "كبدة مشوية طازجة.", ku: "جەرگی تازەی برژاو." } },
+    { id: 110, category: "grilledMeats", price: "18,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/grilled%20liver.webp", name: { en: "Liver (2 Skewers)", ar: "معلاق (سيخين)", ku: "جەرگ ٢ شیش" }, desc: { en: "Fresh grilled liver.", ar: "كبدة مشوية طازجة.", ku: "جەرگی تازەی brژاو." } },
+    { id: 111, category: "grilledMeats", price: "18,000", image: "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_2ve8YiIujdS9Zy1L1Ldz9g9A0CP%2Fhf_20260228_054928_144743b0-4c68-4ff1-b385-2d63c6986f70.png&w=1280&q=85", name: { en: "Adana Kebab", ar: "كباب أضنة", ku: "کەباب ئەدەنە" }, desc: { en: "2 skewers of stuffed kebab.", ar: "سيخين كباب محشي.", ku: "دوو شیش کەباب مەعشی." } },
+    { id: 112, category: "grilledMeats", price: "16,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/meat%20kabab.webp", name: { en: "Meat Kebab", ar: "كباب لحم", ku: "کەبابی گۆشت" }, desc: { en: "2 skewers of local meat kebab.", ar: "سيخين كباب لحم محلي.", ku: "دوو شیش کەباب بە گۆشتی خۆماڵی." } },
+    { id: 113, category: "grilledMeats", price: "14,000", image: "https://images.unsplash.com/photo-1599487405250-c274331711ac?w=500&h=500&fit=crop", name: { en: "Chicken Tikka", ar: "تكة دجاج", ku: "تکەی مریشک" }, desc: { en: "2 skewers of chicken tikka.", ar: "سيخين تكة دجاج.", ku: "دوو شیش تکەی مریشک." } },
+    { id: 114, category: "grilledMeats", price: "18,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/Mixed%20Grilled.webp", name: { en: "Mixed Grill", ar: "مشاوي مشكلة", ku: "تێکەڵەی برژاو" }, desc: { en: "Meat tikka, meat kebab, and chicken tikka.", ar: "تكة لحم، كباب لحم، تكة دجاج.", ku: "تکە گۆشت، کەباب گۆشت، تکە مریشک." } },
+    { id: 115, category: "grilledMeats", price: "16,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/meat%20tikka.webp", name: { en: "Meat Tikka", ar: "تكة لحم", ku: "تکەی گۆشت" }, desc: { en: "2 skewers of local meat tikka.", ar: "سيخين تكة لحم محلي.", ku: "دوو شیش تکەی گۆشتی خۆماڵی." } },
+    { id: 116, category: "grilledMeats", price: "10,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/grilled%20wing.webp", name: { en: "Grilled Wings", ar: "أجنحة مشوية", ku: "باڵ" }, desc: { en: "2 skewers of grilled wings.", ar: "سيخين أجنحة دجاج مشوية.", ku: "دوو شیش باڵ." } },
+
+    // EASTERN MEALS
+    { id: 201, category: "easternMeals", price: "10,000", image: "https://smiling-maroon-8obuyxgazo.edgeone.app/dolma.webp", name: { en: "Dolma", ar: "دولمة", ku: "دۆڵمە" }, desc: { en: "Traditional stuffed vegetables.", ar: "خضروات محشوة تقليدية.", ku: "دۆڵمەی بەتامی خۆماڵی." } },
+    { id: 202, category: "easternMeals", price: "30,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/meat%20dulemi.webp", name: { en: "Meat Duleimi", ar: "دليمية لحم", ku: "دلیمی گۆشت" }, desc: { en: "Traditional meat and rice dish.", ar: "طبق دليمية اللحم والأرز التقليدي.", ku: "دلیمی گۆشت و برنج." } },
+    { id: 203, category: "easternMeals", price: "25,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chciken%20dulemi.webp", name: { en: "Chicken Duleimi", ar: "دليمية دجاج", ku: "دلیمی مریشک" }, desc: { en: "Traditional chicken and rice dish.", ar: "طبق دليمية الدجاج والأرز التقليدي.", ku: "دلیمی مریشک و برنج." } },
+    { id: 204, category: "easternMeals", price: "40,000", image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&h=500&fit=crop", name: { en: "Mixed Duleimi", ar: "دليمية مشكلة", ku: "دلیمی مشکل" }, desc: { en: "Mixed traditional dish.", ar: "طبق دليمية مشكل.", ku: "دلیمی تێکەڵەی تایبەت." } },
+    { id: 205, category: "easternMeals", price: "15,000", image: "https://smiling-maroon-8obuyxgazo.edgeone.app/Qaliya.webp", name: { en: "Meat Qaliya", ar: "قلية", ku: "قەلییە" }, desc: { en: "Traditional pan-fried meat.", ar: "لحم مقلي بالطريقة التقليدية.", ku: "قەلییەی گۆشتی بەتام." } },
+    { id: 206, category: "easternMeals", price: "7,000", image: "https://smiling-maroon-8obuyxgazo.edgeone.app/Plain%20tashreeb.webp", name: { en: "Plain Tashreeb", ar: "تشريب سادة", ku: "تشریب سادە" }, desc: { en: "Traditional broth poured over bread.", ar: "مرق تقليدي مشرب بالخبز.", ku: "تشریبی سادە بە ئاوی گۆشت." } },
+    { id: 207, category: "easternMeals", price: "15,000", image: "https://smiling-maroon-8obuyxgazo.edgeone.app/Meat%20Tashreeb.webp", name: { en: "Meat Tashreeb", ar: "تشريب لحم", ku: "تشریب گۆشت" }, desc: { en: "Traditional meat and broth over bread.", ar: "تشريب مع قطع اللحم الطرية.", ku: "تشریبی گۆشتی ئامادەکراو." } },
+    { id: 209, category: "easternMeals", price: "17,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/rice%20and%20meat.webp", name: { en: "Meat and Rice", ar: "لحم ورز", ku: "گۆشت و برنج" }, desc: { en: "Traditional meat served with rice.", ar: "لحم تقليدي يقدم مع الرز.", ku: "گۆشتی نەرم لەگەڵ برنجی تامدار." } },
+    { id: 210, category: "easternMeals", price: "14,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/rice%20and%20chicken.webp", name: { en: "Rice, Chicken & Stew", ar: "رز ودجاج ومرق", ku: "برنج و مریشک و شلە" }, desc: { en: "Rice served with chicken and stew.", ar: "رز يقدم مع الدجاج والمرق.", ku: "برنجی بەتام لەگەڵ مریشک و شلە." } },
+    { id: 211, category: "easternMeals", price: "7,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/rice%20and%20stew.webp", name: { en: "Rice and Stew", ar: "رز ومرق", ku: "برنج و شلە" }, desc: { en: "Rice served with traditional stew.", ar: "رز يقدم مع المرق التقليدي.", ku: "برنجی بەتام لەگەڵ شلەی نەریتی." } },
+    { id: 212, category: "easternMeals", price: "10,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/half%20chicken.webp", name: { en: "Half Chicken", ar: "نصف دجاجة", ku: "نیو مریشکی" }, desc: { en: "Roasted half chicken.", ar: "نصف دجاجة محمرة.", ku: "نیو مریشکی برژاو." } },
+    { id: 213, category: "easternMeals", price: "18,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/whole%20chicken.webp", name: { en: "Whole Chicken", ar: "دجاجة كاملة", ku: "مریشک تەواو" }, desc: { en: "Roasted whole chicken.", ar: "دجاجة كاملة محمرة.", ku: "مریشکی تەواوی برژاو." } },
+    { id: 214, category: "easternMeals", price: "12,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/kubba.webp", name: { en: "Mosul Kubba", ar: "كبة موصل", ku: "کوبە موسل" }, desc: { en: "Traditional large flat Kubba from Mosul.", ar: "كبة الموصل الكبيرة والشهيرة.", ku: "کوبەی گەورە و بەتامی تایبەت بە موسڵ." } },
+
+    // WESTERN MEALS
+    { id: 301, category: "westernMeals", price: "15,000", image: "https://enormous-ivory-eivavbladx.edgeone.app/5239985596229427284.jpg", name: { en: "KFC (5 Pieces)", ar: "كنتاكي (5 قطع)", ku: "کنتاکی ٥ پارچە" }, desc: { en: "Crispy fried chicken pieces.", ar: "قطع دجاج مقلية ومقرمشة.", ku: "مریشکی کنتاکی سورەوەکراو." } },
+    { id: 303, category: "westernMeals", price: "7,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/meat%20burger.webp", name: { en: "Meat Burger", ar: "برجر لحم", ku: "هەمبەرگر گۆشت" }, desc: { en: "Single meat burger with sides.", ar: "برجر لحم مع مقبلات.", ku: "هەمبەرگری گۆشت بە پەتاتە و زەڵاتەوە." } },
+    { id: 304, category: "westernMeals", price: "6,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chiken%20burger.webp", name: { en: "Chicken Burger", ar: "برجر دجاج", ku: "هەمبەرگر مریشک" }, desc: { en: "Single chicken burger with sides.", ar: "برجر دجاج مع مقبلات.", ku: "هەمبەرگری مریشک بە پەتاتە و زەڵاتەوە." } },
+    { id: 305, category: "westernMeals", price: "2,750", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chicken%20gus.webp", name: { en: "Chicken Gus", ar: "قص دجاج", ku: "گەس مریشک" }, desc: { en: "Single chicken shawarma sandwich.", ar: "لفة شاورما دجاج واحدة.", ku: "لەفەی گەسی مریشکی بەتام." } },
+    { id: 306, category: "westernMeals", price: "3,500", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/meat%20gus.webp", name: { en: "Meat Gus", ar: "قص لحم", ku: "گەس گۆشت" }, desc: { en: "Single meat shawarma sandwich.", ar: "لفة شاورما لحم واحدة.", ku: "لەفەی گەسی گۆشتی بەتام." } },
+    { id: 307, category: "westernMeals", price: "14,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/meat%20gus%20plate.webp", name: { en: "Meat Gus Plate", ar: "ماعون قص لحم", ku: "ماعوون گەس گۆشت" }, desc: { en: "Meat shawarma served on a plate.", ar: "شاورما لحم تقدم في ماعون.", ku: "ماعوونی گەسی گۆشت لەگەڵ سەوزەوات." } },
+    { id: 308, category: "westernMeals", price: "12,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chicken%20gus%20plate.webp", name: { en: "Chicken Gus Plate", ar: "ماعون قص دجاج", ku: "ماعوون گەس مریشک" }, desc: { en: "Chicken shawarma served on a plate.", ar: "شاورما دجاج تقدم في ماعون.", ku: "ماعوونی گەسی مریشک لەگەڵ سەوزەوات." } },
+    { id: 309, category: "westernMeals", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/meat%20saj.webp", name: { en: "Meat Saj", ar: "صاج لحم", ku: "ساج گۆشت" }, desc: { en: "Meat wrapped in thin saj bread.", ar: "لحم ملفوف بخبز الصاج.", ku: "لەفەی ساجی گۆشتی برژاو." } },
+    { id: 310, category: "westernMeals", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chicken%20saj.webp", name: { en: "Chicken Saj", ar: "صاج دجاج", ku: "ساج مریشک" }, desc: { en: "Chicken wrapped in thin saj bread.", ar: "دجاج ملفوف بخبز الصاج.", ku: "لەفەی ساجی مریشکی برژاو." } },
+    { id: 311, category: "westernMeals", price: "16,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/lasgna.webp", name: { en: "Lasagna", ar: "لازانيا", ku: "لەزانیا" }, desc: { en: "Classic layered pasta with meat and cheese.", ar: "باستا لازانيا مع اللحم والجبن.", ku: "لەزانیای بەتام بە گۆشت و پەنیر." } },
+    { id: 312, category: "westernMeals", price: "14,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/fajita.webp", name: { en: "Chicken Fajita", ar: "فاهيتا دجاج", ku: "فاهیتە مریشک" }, desc: { en: "Sizzling chicken fajita.", ar: "فاهيتا الدجاج اللذيذة.", ku: "فاهیتەی مریشکی تایبەت." } },
+    { id: 313, category: "westernMeals", price: "14,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/chicken%20nugget.webp", name: { en: "Chicken Nuggets", ar: "ناجتس دجاج", ku: "ناگێتی مریشک" }, desc: { en: "Crispy chicken nuggets.", ar: "قطع دجاج ناجتس مقرمشة.", ku: "ناگێتی مریشکی کریسپی." } },
+    { id: 314, category: "westernMeals", price: "4,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/french%20freis.webp", name: { en: "French Fries", ar: "بطاطا مقلية (فنجر)", ku: "پەتاتەی سورەوەکراو (فینگر)" }, desc: { en: "Crispy golden french fries.", ar: "أصابع بطاطا مقلية ومقرمشة.", ku: "پەتاتەی فینگەر." } },
+
+    // PIZZA
+    { id: 701, category: "pizza", price: "15,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/mix%20pizza.webp", name: { en: "Mixed Pizza", ar: "بيتزا مشكلة", ku: "تێکەڵە" }, desc: { en: "Sauce, cheese, meat, green pepper, olives, mushroom, chicken.", ar: "صلصة، جبن، لحم، فلفل أخضر، زيتون، فطر، دجاج.", ku: "سۆس، پەنیر، گۆشت، بیبەر سەوز، زەیتون، قارچک، مریشک." } },
+    { id: 702, category: "pizza", price: "14,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/shingelbana%20pizza.webp", name: { en: "Shingelbana Pizza", ar: "بيتزا شنكلبانة", ku: "شینگلەبانە" }, desc: { en: "Sauce, cheese, meat, green pepper, mushroom, tomato.", ar: "صلصة، جبن، لحم، فلفل أخضر، فطر، طماطم.", ku: "سۆس، پەنیر، گۆشت، بیبەری سەوز، قارچک، تەماتە." } },
+    { id: 703, category: "pizza", price: "12,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/rawanduz%20pizza.webp", name: { en: "Rawanduz Pizza", ar: "بيتزا رواندز", ku: "ڕواندز" }, desc: { en: "Sauce, cheese, chicken, mushroom, pineapple, curry.", ar: "صلصة، جبن، دجاج، فطر، أناناس، كاري.", ku: "سۆس، پەنیر، مریشک، قارچک، ئەنەناس، کاری." } },
+    { id: 704, category: "pizza", price: "11,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/chicken%20pizza.webp", name: { en: "Chicken Pizza", ar: "بيتزا دجاج", ku: "مریشک" }, desc: { en: "Sauce, cheese, mushroom, chicken, green pepper, olives.", ar: "صلصة، جبن، فطر، دجاج، فلفل أخضر، زيتون.", ku: "سۆس، پەنیر، قارچک، مریشک، بیبەری سەوز، زەیتون." } },
+    { id: 705, category: "pizza", price: "11,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/milan%20pizza.webp", name: { en: "Milan Pizza", ar: "بيتزا ميلانو", ku: "میلان" }, desc: { en: "Sauce, cheese, minced meat.", ar: "صلصة، جبن، لحم مفروم.", ku: "سۆس، پەنیر، گۆشتی قیمە." } },
+    { id: 706, category: "pizza", price: "11,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/opera%20pizza.webp", name: { en: "Opera Pizza", ar: "بيتزا أوبرا", ku: "ئۆپێرا" }, desc: { en: "Sauce, cheese, tuna fish.", ar: "صلصة، جبن، تونة.", ku: "سۆس، پەنیر، ماسی تونا." } },
+    { id: 707, category: "pizza", price: "11,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/salami%20pizza.webp", name: { en: "Salami Pizza", ar: "بيتزا سلامي", ku: "سەلامی" }, desc: { en: "Sauce, cheese, salami, olives.", ar: "صلصة، جبن، سلامي، زيتون.", ku: "سۆس، پەنیر، سەلامی، زەیتون." } },
+    { id: 708, category: "pizza", price: "10,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/vegetable%20pizza.webp", name: { en: "Vegetable Pizza", ar: "بيتزا خضار", ku: "سەوزەوات" }, desc: { en: "Sauce, cheese, mushroom, green pepper, olives.", ar: "صلصة، جبن، فطر، فلفل أخضر، زيتون.", ku: "سۆس، پەنیر، قارچک، بیبەر سەوز، زەیتون." } },
+    { id: 709, category: "pizza", price: "10,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/margharita%20piza.webp", name: { en: "Margherita Pizza", ar: "بيتزا مارغريتا", ku: "مارگریتا" }, desc: { en: "Sauce, cheese.", ar: "صلصة، جبن.", ku: "سۆس، پەنیر." } },
+
+    // SALADS & APPETIZERS
+    { id: 801, category: "salads", price: "10,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/Large%20apprezite.webp", name: { en: "Large Appetizers", ar: "مقبلات كبيرة", ku: "مقەبیلاتی گەورە" }, desc: { en: "Large mixed appetizers.", ar: "مقبلات مشكلة كبيرة.", ku: "مقەبیلاتی تێکەڵی قەبارە گەورە." } },
+    { id: 802, category: "salads", price: "8,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/medium%20apprezite.webp", name: { en: "Medium Appetizers", ar: "مقبلات وسط", ku: "مقەبیلاتی ناوەند" }, desc: { en: "Medium mixed appetizers.", ar: "مقبلات مشكلة وسط.", ku: "مقەبیلاتی تێکەڵی قەبارە ناوەند." } },
+    { id: 803, category: "salads", price: "7,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/greek%20salad.webp", name: { en: "Greek Salad", ar: "سلطة يونانية", ku: "زەڵاتەی یۆنانی" }, desc: { en: "Tomato, cucumber, cheese, olives, lettuce.", ar: "طماطم، خيار، جبن، زيتون، خس.", ku: "تەماتە، خەیار، پەنیر، زەیتون، خاس." } },
+    { id: 804, category: "salads", price: "6,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/fatoush.webp", name: { en: "Fattoush", ar: "فتوش", ku: "فەتوش" }, desc: { en: "Tomato, cucumber, lettuce, olives, fattoush bread, mint.", ar: "طماطم، خيار، خس، زيتون، خبز فتوش، نعناع.", ku: "تەماتە، خەیار، خاس، زەیتون، نانی فەتوش، نەعناع." } },
+    { id: 805, category: "salads", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/orintal%20salad.webp", name: { en: "Oriental Salad", ar: "سلطة شرقية", ku: "زەڵاتەی شەرقی (ڕۆژهەڵاتی)" }, desc: { en: "Tomato, cucumber, lettuce.", ar: "طماطم، خيار، خس.", ku: "تەماتە، خەیار، خاس." } },
+    { id: 806, category: "salads", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/hummas.webp", name: { en: "Hummus", ar: "حمص", ku: "حمص" }, desc: { en: "Classic creamy chickpea dip.", ar: "حمص ناعم كلاسيكي.", ku: "نۆکاوی هارراو و نەرم." } },
+    { id: 807, category: "salads", price: "4,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/coleslaw.webp", name: { en: "Coleslaw", ar: "كولسلو (لهانة)", ku: "کەلەرم" }, desc: { en: "White cabbage, carrots.", ar: "لهانة بيضاء، جزر.", ku: "کەلەرمی سپی، گێزەر." } },
+    { id: 808, category: "salads", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/mutable%20eggplant.webp", name: { en: "Mutabal Eggplant", ar: "متبل باذنجان", ku: "متبل باینجان" }, desc: { en: "Tomato, cucumber, eggplant, onion.", ar: "طماطم، خيار، باذنجان، بصل.", ku: "تەماتە، خەیار، باینجان، پیاز." } },
+    { id: 809, category: "salads", price: "3,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/Tzatziki.webp", name: { en: "Tzatziki (Gagik)", ar: "جاجيك", ku: "خەیار و ماست جاجیک" }, desc: { en: "Yogurt, cucumber, mint.", ar: "زبادي، خيار، نعناع.", ku: "ماست، خەیار، نەعناع." } },
+
+    // HOT DRINKS
+    { id: 501, category: "hotDrinks", price: "6,000", image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=500&h=500&fit=crop", name: { en: "Double Espresso", ar: "دبل إسبريسو", ku: "دەبڵ ئێسپرێسۆ" }, desc: { en: "Strong double shot of espresso.", ar: "جرعة مزدوجة من الإسبريسو.", ku: "قاوەی ئێسپرێسۆی دەبڵ." } },
+    { id: 502, category: "hotDrinks", price: "4,000", image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500&h=500&fit=crop", name: { en: "Espresso", ar: "إسبريسو", ku: "ئێسپرێسۆ" }, desc: { en: "Classic rich espresso.", ar: "إسبريسو غني وكلاسيكي.", ku: "قاوەی ئێسپرێسۆی کلاسیک." } },
+    { id: 503, category: "hotDrinks", price: "3,500", image: "https://excellent-indigo-3siym5781n.edgeone.app/hf_20260304_011049_842a21a4-cbdf-4a1b-81c5-9ce4b10e0b9f.jpeg", name: { en: "Qazwan Coffee", ar: "قهوة قزوان (كردية)", ku: "قاوەی قەزوان" }, desc: { en: "Traditional Kurdish coffee made from Qazwan.", ar: "قهوة كردية تقليدية مصنوعة من القزوان.", ku: "قاوەی کوردی ڕەسەن بە قەزوان." } },
+    { id: 504, category: "hotDrinks", price: "3,500", image: "https://excellent-indigo-3siym5781n.edgeone.app/hf_20260304_011049_842a21a4-cbdf-4a1b-81c5-9ce4b10e0b9f.jpeg", name: { en: "Turkish Coffee", ar: "قهوة تركية", ku: "قاوەی تورکی" }, desc: { en: "Rich, unfiltered Turkish coffee.", ar: "قهوة تركية غنية.", ku: "قاوەی خەستی تورکی." } },
+    { id: 505, category: "hotDrinks", price: "3,000", image: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=500&h=500&fit=crop", name: { en: "Nescafe", ar: "نسكافيه", ku: "نیسکافە" }, desc: { en: "Classic instant coffee.", ar: "قهوة سريعة التحضير.", ku: "قاوەی خێرای کلاسیک." } },
+    { id: 506, category: "hotDrinks", price: "4,000", image: "https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&h=500&fit=crop", name: { en: "Cappuccino", ar: "كابتشينو", ku: "کاپووچینۆ" }, desc: { en: "Espresso with steamed milk.", ar: "إسبريسو مع حليب مبخر.", ku: "قاوە بە شیری گەرم و کەف." } },
+    { id: 507, category: "hotDrinks", price: "3,000", image: "https://curved-black-u8xau4vtek.edgeone.app/hf_20260304_011112_f1c7d995-b2fd-467f-848b-0e126d0858ba.jpeg", name: { en: "Milk", ar: "حليب", ku: "شیر" }, desc: { en: "Warm fresh milk.", ar: "حليب طازج ودافئ.", ku: "شیری گەرم و فرێش." } },
+    { id: 508, category: "hotDrinks", price: "1,000", image: "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?w=500&h=500&fit=crop", name: { en: "Green Tea", ar: "شاي أخضر", ku: "چای سەوز" }, desc: { en: "Healthy brewed green tea.", ar: "شاي أخضر صحي.", ku: "چای سەوزی تەندروست." } },
+    { id: 509, category: "hotDrinks", price: "1,000", image: "https://distinctive-salmon-etda7go5ci.edgeone.app/tea.webp", name: { en: "Tea", ar: "شاي", ku: "چا" }, desc: { en: "Classic black tea.", ar: "شاي أسود كلاسيكي.", ku: "چای ڕەشی کلاسیک." } },
+    { id: 510, category: "hotDrinks", price: "4,000", image: "https://images.unsplash.com/photo-1551030173-122aabc4489c?w=500&h=500&fit=crop", name: { en: "Americano", ar: "أمريكانو", ku: "ئەمریکانۆ" }, desc: { en: "Classic Americano coffee.", ar: "قهوة أمريكانو كلاسيكية.", ku: "قاوەی ئەمریکانۆی کلاسیک." } },
+
+    // COLD DRINKS
+    { id: 401, category: "coldDrinks", subCategory: "juice", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/pomogrante%20juice.webp", name: { en: "Pomegranate Juice", ar: "عصير رمان", ku: "شەربەت هەنار" }, desc: { en: "Freshly squeezed pomegranate juice.", ar: "عصير رمان طازج.", ku: "شەربەتی هەناری فرێش." } },
+    { id: 402, category: "coldDrinks", subCategory: "juice", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/orange%20juice.webp", name: { en: "Orange Juice", ar: "عصير برتقال", ku: "شەربەت پرتەقاڵ" }, desc: { en: "Freshly squeezed orange juice.", ar: "عصير برتقال طازج.", ku: "شەربەتی پرتەقاڵی فرێش." } },
+    { id: 403, category: "coldDrinks", subCategory: "juice", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/bananmilk.webp", name: { en: "Banana Juice", ar: "عصير موز", ku: "شەربەت مۆز" }, desc: { en: "Fresh banana juice/smoothie.", ar: "عصير موز طازج.", ku: "شەربەتی مۆزی فرێش." } },
+    { id: 404, category: "coldDrinks", subCategory: "juice", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/lemon%20juice.webp", name: { en: "Lemon Juice", ar: "عصير ليمون", ku: "شەربەت لیمۆ" }, desc: { en: "Refreshing lemon juice.", ar: "عصير ليمون منعش.", ku: "شەربەتی لیمۆی فرێش." } },
+    { id: 405, category: "coldDrinks", subCategory: "juice", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/melon%20juice.webp", name: { en: "Melon Juice", ar: "عصير بطيخ / شمام", ku: "شەربەت گندۆرە" }, desc: { en: "Fresh melon juice.", ar: "عصير بطيخ طازج.", ku: "شەربەتی گندۆرەی فرێش." } },
+    { id: 406, category: "coldDrinks", subCategory: "juice", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/lemon%20orange%20juice.webp", name: { en: "Mix Lemon & Orange", ar: "مكس ليمون وبرتقال", ku: "شەربەت مکس لیمۆ و پرتەقاڵ" }, desc: { en: "Mixed lemon and orange juice.", ar: "مزيج عصير الليمون والبرتقال.", ku: "تێکەڵەی لیمۆ و پرتەقاڵ." } },
+    { id: 413, category: "coldDrinks", subCategory: "juice", price: "2,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/glass%20juice.webp", name: { en: "Bottled Juice", ar: "عصير زجاجة", ku: "شەربەتی شوشە" }, desc: { en: "Bottled fruit juice.", ar: "عصير معبأ في زجاجة.", ku: "شەربەتی جۆراوجۆری ناو شوشە." } },
+
+    { id: 408, category: "coldDrinks", subCategory: "energy", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/mecican%20redbull.webp", name: { en: "Mexican Redbull", ar: "ريدبول مكسيكي", ku: "ڕێدبوڵ مەکسیکی" }, desc: { en: "Mexican Redbull energy drink.", ar: "مشروب طاقة ريدبول مكسيكي.", ku: "خوادنەوەی وزەبەخشی ڕێدبوڵی مەکسیکی." } },
+    { id: 409, category: "coldDrinks", subCategory: "energy", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/redbull.webp", name: { en: "Redbull", ar: "ريدبول", ku: "ڕێدبوڵ" }, desc: { en: "Redbull energy drink.", ar: "مشروب طاقة ريدبول.", ku: "خواردنەوەی وزەبەخشی ڕێدبوڵ." } },
+    { id: 410, category: "coldDrinks", subCategory: "energy", price: "3,000", image: "https://grotesque-green-aiallmc6w3.edgeone.app/Gemini_Generated_Image_c1xg1c1xg1c1xg1c.png", name: { en: "Mexican Tiger", ar: "تايجر مكسيكي", ku: "تايگەر مەکسیکی" }, desc: { en: "Mexican Tiger energy drink.", ar: "مشروب طاقة تايجر مكسيكي.", ku: "خواردنەوەی وزەبەخشی تایگەری مەکسیکی." } },
+    { id: 411, category: "coldDrinks", subCategory: "energy", price: "2,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/tiger.webp", name: { en: "Tiger", ar: "تايجر", ku: "تايگەر" }, desc: { en: "Tiger energy drink.", ar: "مشروب طاقة تايجر.", ku: "خواردنەوەی وزەبەخشی تایگەر." } },
+
+    { id: 412, category: "coldDrinks", subCategory: "soft", price: "2,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/cola%20zero.webp", name: { en: "Cola Zero", ar: "كولا زيرو", ku: "کۆلا زیرۆ" }, desc: { en: "Zero calorie cola.", ar: "كولا بدون سعرات حرارية.", ku: "خواردنەوەی گازی کۆلا زیرۆ." } },
+    { id: 414, category: "coldDrinks", subCategory: "soft", price: "1,500", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/soda.webp", name: { en: "Soda", ar: "صودا", ku: "سۆدە" }, desc: { en: "Sparkling soda water.", ar: "مياه غازية (صودا).", ku: "ئاوی گازی (سۆدە)." } },
+    { id: 415, category: "coldDrinks", subCategory: "soft", price: "1,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/soft%20drink.webp", name: { en: "Soft Drinks", ar: "مشروبات غازية", ku: "خواردنەوە گازییەکان" }, desc: { en: "Assorted soft drinks in cans.", ar: "مشروبات غازية متنوعة.", ku: "خواردنەوە گازییە جۆراوجۆرەکان." } },
+
+    { id: 407, category: "coldDrinks", subCategory: "other", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/ice%20coffee.webp", name: { en: "Ice Coffee", ar: "آيس كوفي", ku: "ئایس کۆفئ" }, desc: { en: "Cold brewed ice coffee.", ar: "قهوة باردة منعشة.", ku: "قاوەی ساردی بەتامی فرێش." } },
+    { id: 416, category: "coldDrinks", subCategory: "other", price: "1,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/ayran.webp", name: { en: "Ayran / Mastaw", ar: "شنينة / عيران", ku: "ماستاو شنینە" }, desc: { en: "Refreshing yogurt drink.", ar: "مشروب اللبن المنعش.", ku: "ماستاوی فێنک و بەتام." } },
+    { id: 417, category: "coldDrinks", subCategory: "other", price: "500", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/water.webp", name: { en: "Bottled Water (Plastic)", ar: "ماء قنينة بلاستيك", ku: "ئاوی دەبە" }, desc: { en: "Refreshing bottled water.", ar: "مياه شرب منعشة.", ku: "ئاوی خواردنەوەی پاک." } },
+    { id: 418, category: "coldDrinks", subCategory: "other", price: "1,500", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/glass%20bottle%20water.webp", name: { en: "Glass Bottled Water", ar: "ماء زجاج", ku: "ئاوی شوشە" }, desc: { en: "Premium glass bottled water.", ar: "مياه شرب فاخرة في زجاجة.", ku: "ئاوی خواردنەوەی ناو شوشە." } },
+
+    // SWEETS & FRUITS
+    { id: 902, category: "sweetsFruits", price: "6,000", image: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=500&h=500&fit=crop", name: { en: "Fruits", ar: "فواكه", ku: "میوە" }, desc: { en: "Fresh seasonal fruits.", ar: "فواكه موسمية طازجة.", ku: "میوەی فرێشی وەرزانە." } },
+    { id: 903, category: "sweetsFruits", price: "5,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/Nuts.webp", name: { en: "Mixed Nuts", ar: "مكسرات", ku: "چەرەسات" }, desc: { en: "Premium mixed nuts.", ar: "مكسرات مشكلة فاخرة.", ku: "چەرەساتی تێکەڵی نایاب." } },
+    { id: 904, category: "sweetsFruits", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/tralicha.webp", name: { en: "Tres Leches Cake (Tralicha)", ar: "كيكة التريليتشا", ku: "ترالیچە" }, desc: { en: "Delicious three milks cake.", ar: "كيكة الحليب الثلاثية اللذيذة.", ku: "کێکی ترالیچەی بەتامی شیر." } },
+    { id: 905, category: "sweetsFruits", price: "4,000", image: "https://surrounding-ivory-kugowtyfpg.edgeone.app/croissant.webp", name: { en: "Croissant", ar: "كرواسون", ku: "کرواسان" }, desc: { en: "Freshly baked croissant.", ar: "كرواسون طازج وهش.", ku: "کرواسانی فرێش و بەتام." } },
+
+    // HOOKAH
+    { id: 601, category: "hookah", price: "10,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Lemon Mint", ar: "ليمون ونعناع", ku: "لیمۆ نعناع" }, desc: { en: "Refreshing lemon and mint flavor.", ar: "نكهة الليمون والنعناع المنعشة.", ku: "نێرگەلە بە تامی لیمۆ و نەعناع." } },
+    { id: 602, category: "hookah", price: "10,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Gum Mint", ar: "علكة ونعناع", ku: "بنیشت نعناع" }, desc: { en: "Gum and mint flavor.", ar: "نكهة العلكة والنعناع.", ku: "نێرگەلە بە تامی بنێشت و نەعناع." } },
+    { id: 603, category: "hookah", price: "11,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Gum Melon", ar: "علكة وبطيخ", ku: "بنیشت گندۆرە" }, desc: { en: "Gum and melon flavor.", ar: "نكهة العلكة والبطيخ.", ku: "نێرگەلە بە تامی بنێشت و گندۆرە." } },
+    { id: 604, category: "hookah", price: "10,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Baghdadi", ar: "أرجيلة بغدادي", ku: "بەغدادی" }, desc: { en: "Traditional Baghdadi mix.", ar: "خلطة بغدادية تقليدية.", ku: "نێرگەلەی تایبەتی بەغدادی." } },
+    { id: 605, category: "hookah", price: "10,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Two Apples", ar: "تفاحتين", ku: "دوو سێو" }, desc: { en: "Classic double apple flavor.", ar: "نكهة التفاحتين الكلاسيكية.", ku: "نێرگەلە بە تامی کلاسیکی دوو سێو." } },
+    { id: 606, category: "hookah", price: "12,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Pomegranate", ar: "رمان", ku: "هەنار" }, desc: { en: "Pomegranate flavor.", ar: "نكهة الرمان.", ku: "نێرگەلە بە تامی هەنار." } },
+    { id: 607, category: "hookah", price: "12,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "English Hookah", ar: "إنجليزي", ku: "ئینگلیزی" }, desc: { en: "Special English mix.", ar: "خلطة إنجليزية خاصة.", ku: "نێرگەلەی ئینگلیزی." } },
+    { id: 608, category: "hookah", price: "12,000", image: "https://ltd-harlequin-2deqr3gspy.edgeone.app/hf_20260224_010325_6041edef-8da4-4ea9-bc19-5d338b3aabaf.jpeg", name: { en: "Shingelbana Hookah", ar: "شنكلبانة", ku: "شنگلبانە" }, desc: { en: "Our signature house mix.", ar: "خلطة البيت المميزة.", ku: "نێرگەلەی تایبەتی شنگلبانە." } }
+  ]
+};
+
+export const tableTranslations: Record<string, string> = {
+  en: "Table",
+  ar: "طاولة",
+  ku: "مێزی"
+};
+
+export const flagsHTML: Record<string, string> = {
+  en: `<img src="https://flagcdn.com/w160/gb.png" class="w-full h-full object-cover" alt="EN">`,
+  ar: `<img src="https://flagcdn.com/w160/iq.png" class="w-full h-full object-cover" alt="AR">`,
+  ku: `<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Kurdistan.svg" class="w-full h-full object-cover" alt="KU">`
+};

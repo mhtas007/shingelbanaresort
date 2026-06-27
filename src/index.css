@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-deepblue: #0a1e3f;
+  --color-deepblue-light: #143666;
+  --color-deepblue-dark: #051024;
+  --color-purewhite: #ffffff;
+  --color-offwhite: #f8fafc;
+
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Noto Kufi Arabic", sans-serif;
+  --font-kurdish: "Noto Kufi Arabic", sans-serif;
+}
+
+/* Smooth transitions & animations */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Prevent pull-to-refresh, bounce effect, and highlight on mobile */
+html,
+body {
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Disable text selection globally for app-like feel, except inputs */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+select {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+/* Hide ALL scrollbars globally */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.form-input-group:focus-within {
+  border-color: #143666;
+  box-shadow: 0 0 0 4px rgba(20, 54, 102, 0.1);
+}
+
+/* Custom rating transitions */
+.star-active {
+  color: #fbbf24 !important;
+  transform: scale(1.2);
+}
