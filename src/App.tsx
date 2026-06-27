@@ -700,8 +700,9 @@ export default function App() {
       
       try {
         await setDoc(doc(firestoreDb, 'menuItems', updatedItem.id.toString()), updatedItem);
-      } catch (err) {
+      } catch (err: any) {
         console.error('Error saving item to Firebase:', err);
+        alert('Failed to save to Firebase. Please check your Firestore Security Rules (they might be set to false). Error: ' + err.message);
       }
     } else {
       // Add
@@ -718,8 +719,9 @@ export default function App() {
       
       try {
         await setDoc(doc(firestoreDb, 'menuItems', newItem.id.toString()), newItem);
-      } catch (err) {
+      } catch (err: any) {
         console.error('Error saving item to Firebase:', err);
+        alert('Failed to save to Firebase. Please check your Firestore Security Rules (they might be set to false). Error: ' + err.message);
       }
     }
     setIsItemModalOpen(false);
@@ -731,8 +733,9 @@ export default function App() {
       
       try {
         await deleteDoc(doc(firestoreDb, 'menuItems', id.toString()));
-      } catch (err) {
+      } catch (err: any) {
         console.error('Error deleting item from Firebase:', err);
+        alert('Failed to delete from Firebase. Please check your Firestore Security Rules. Error: ' + err.message);
       }
     }
   };
@@ -806,8 +809,9 @@ export default function App() {
     
     try {
       await setDoc(doc(firestoreDb, 'settings', 'categories'), { data: updatedCategories });
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
+      alert('Failed to save categories to Firebase. Error: ' + err.message);
     }
 
     setIsCategoryModalOpen(false);
@@ -832,8 +836,9 @@ export default function App() {
       try {
         await batch.commit();
         await setDoc(doc(firestoreDb, 'settings', 'categories'), { data: updatedCategories });
-      } catch (err) {
+      } catch (err: any) {
         console.error(err);
+        alert('Failed to delete category from Firebase. Error: ' + err.message);
       }
     }
   };
