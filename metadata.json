@@ -1,0 +1,6 @@
+{
+  "name": "Shingelbana Resort Digital Menu",
+  "description": "A multilingual digital menu for Shingelbana Resort & Restaurant featuring Kurdish, Arabic, and English languages with table reservation and direct feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
